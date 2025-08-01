@@ -1,5 +1,8 @@
 def add(numbers: str) -> int:
     if numbers == "":
         return 0
-    parts = numbers.split(",")
+    
+    normalized = numbers.replace("\n", ",")
+    
+    parts = normalized.split(",")
     return sum(int(part) for part in parts)
