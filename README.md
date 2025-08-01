@@ -106,9 +106,6 @@ add("1,2,3,4,5")  # Returns: 15
 # Newline support
 add("1\n2,3")     # Returns: 6
 
-# Custom delimiters
-add("//;\n1;2")   # Returns: 3
-add("//|\n1|2|3") # Returns: 6
 
 # Negative numbers (throws exception)
 add("-1,2")       # Raises: NegativeNumberError
@@ -128,7 +125,7 @@ string_calculator/
     └── commit_history.png
 ```
 
-## 📸 Screenshots
+##Screenshots
 
 ### Test Execution
 ![Test Execution](screenshots/test_execution.png)
@@ -136,7 +133,7 @@ string_calculator/
 ### TDD Red-Green-Refactor Cycle
 ![TDD Cycle](screenshots/tdd_cycle.png)
 
-## 🤝 TDD Best Practices Demonstrated
+## TDD Best Practices Demonstrated
 
 - **Incremental Development**: Each feature built step by step
 - **Frequent Commits**: Every Red-Green-Refactor cycle committed
